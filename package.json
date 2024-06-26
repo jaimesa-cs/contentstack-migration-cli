@@ -1,0 +1,32 @@
+{
+  "name": "migration-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.19.39",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "bin": {
+    "migration-cli": "./bin/run.js"
+  },
+  "oclif": {
+    "bin": "migration-cli",
+    "commands": "./dist/commands",
+    "dirname": "migration-cli",
+    "topicSeparator": " "
+  },
+  "dependencies": {
+    "@oclif/core": "^4.0.6",
+    "fs": "^0.0.1-security",
+    "tslog": "^4.9.3"
+  }
+}

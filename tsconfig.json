@@ -1,0 +1,9 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "module": "NodeNext"
+  }
+}
